@@ -1,0 +1,116 @@
+{
+  "participants": [
+    {
+      "name": "Hugging Face GPT-OSS 20B",
+      "provider": "huggingface",
+      "model": "openai/gpt-oss-20b:fastest",
+      "role": "software",
+      "enabled": false
+    },
+    {
+      "name": "Together Llama 3.3 70B",
+      "provider": "together",
+      "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "role": "philosopher",
+      "enabled": false
+    },
+    {
+      "name": "Fireworks Llama 3.3 70B",
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/llama-v3p3-70b-instruct",
+      "role": "engineer",
+      "enabled": false
+    },
+    {
+      "name": "Novita DeepSeek Flash",
+      "provider": "novita",
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "role": "math",
+      "enabled": false
+    },
+    {
+      "name": "NVIDIA Llama 3.3 70B",
+      "provider": "nvidia",
+      "model": "meta/llama-3.3-70b-instruct",
+      "role": "physicist",
+      "enabled": false
+    },
+    {
+      "name": "Qwen Flash (DashScope)",
+      "provider": "dashscope",
+      "model": "qwen-flash",
+      "role": "humanities",
+      "enabled": false
+    },
+    {
+      "name": "GLM Flash (Z.ai)",
+      "provider": "zai",
+      "model": "glm-4.5-flash",
+      "role": "lawyer",
+      "enabled": false
+    },
+    {
+      "name": "GLM Flash (Zhipu)",
+      "provider": "zhipu",
+      "model": "glm-4.5-flash",
+      "role": "historian",
+      "enabled": false
+    },
+    {
+      "name": "Chutes Qwen 3.8 27B",
+      "provider": "chutes",
+      "model": "Qwen/Qwen3.8-27B-TEE",
+      "role": "skeptic",
+      "enabled": false
+    },
+    {
+      "name": "Cloudflare Llama 3.1 8B",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.1-8b-instruct",
+      "role": "economist",
+      "enabled": false
+    },
+    {
+      "name": "DeepInfra Gemma 4 31B",
+      "provider": "deepinfra",
+      "model": "google/gemma-4-31B-it",
+      "role": "psychologist",
+      "enabled": false
+    },
+    {
+      "name": "SiliconFlow Qwen3 8B",
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "role": "medical",
+      "enabled": false
+    },
+    {
+      "name": "Hyperbolic Llama 3.3 70B",
+      "provider": "hyperbolic",
+      "model": "meta-llama/Llama-3.3-70B-Instruct",
+      "role": "devil",
+      "enabled": false
+    },
+    {
+      "name": "Nebius Llama 3.3 70B",
+      "provider": "nebius",
+      "model": "meta-llama/Llama-3.3-70B-Instruct",
+      "role": "engineer",
+      "enabled": false
+    }
+  ],
+  "tests": {},
+  "config": {
+    "rounds": 2,
+    "roles_enabled": true,
+    "judge_enabled": false,
+    "office_enabled": true,
+    "manager_enabled": true,
+    "compact_enabled": true,
+    "timeout": 60,
+    "judge": "",
+    "manager": "",
+    "secretary": "",
+    "access_mode": "ask"
+  }
+}

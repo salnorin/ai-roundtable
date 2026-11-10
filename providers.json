@@ -1,0 +1,315 @@
+{
+ "providers": {
+  "xai": {
+   "label": "xAI Grok",
+   "base_url": "https://api.x.ai/v1",
+   "env": "XAI_API_KEY",
+   "default_model": "grok-4-fast-non-reasoning",
+   "tier": "cheap",
+   "signup": "https://console.x.ai"
+  },
+  "deepseek": {
+   "label": "DeepSeek",
+   "base_url": "https://api.deepseek.com/v1",
+   "env": "DEEPSEEK_API_KEY",
+   "default_model": "deepseek-flash",
+   "tier": "cheap",
+   "signup": "https://platform.deepseek.com/api_keys"
+  },
+  "gemini": {
+   "label": "Google Gemini",
+   "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+   "env": "GEMINI_API_KEY",
+   "default_model": "gemini-3.1-flash-lite",
+   "tier": "free",
+   "signup": "https://aistudio.google.com/apikey"
+  },
+  "moonshot": {
+   "label": "Kimi (Moonshot)",
+   "base_url": "https://api.moonshot.ai/v1",
+   "env": "MOONSHOT_API_KEY",
+   "default_model": "kimi-k2-turbo-preview",
+   "tier": "freemium",
+   "signup": "https://platform.kimi.ai/console/api-keys"
+  },
+  "openrouter": {
+   "label": "OpenRouter (free)",
+   "base_url": "https://openrouter.ai/api/v1",
+   "env": "OPENROUTER_API_KEY",
+   "default_model": "nvidia/nemotron-3.5-lightning:free",
+   "timeout": 90,
+   "tier": "free",
+   "signup": "https://openrouter.ai/keys"
+  },
+  "groq": {
+   "label": "Groq",
+   "base_url": "https://api.groq.com/openai/v1",
+   "env": "GROQ_API_KEY",
+   "default_model": "openai/gpt-oss-120b",
+   "tier": "free",
+   "signup": "https://console.groq.com/keys"
+  },
+  "mistral": {
+   "label": "Mistral",
+   "base_url": "https://api.mistral.ai/v1",
+   "env": "MISTRAL_API_KEY",
+   "default_model": "mistral-small-latest",
+   "tier": "freemium",
+   "signup": "https://console.mistral.ai/api-keys"
+  },
+  "cerebras": {
+   "label": "Cerebras",
+   "base_url": "https://api.cerebras.ai/v1",
+   "env": "CEREBRAS_API_KEY",
+   "default_model": "auto",
+   "tier": "free",
+   "signup": "https://cloud.cerebras.ai/platform/api-keys"
+  },
+  "cohere": {
+   "label": "Cohere",
+   "base_url": "https://api.cohere.ai/compatibility/v1",
+   "env": "COHERE_API_KEY",
+   "default_model": "command-a-03-2025",
+   "tier": "freemium",
+   "signup": "https://dashboard.cohere.com/api-keys"
+  },
+  "github": {
+   "label": "GitHub Models",
+   "base_url": "https://models.github.ai/inference",
+   "env": "GITHUB_TOKEN",
+   "default_model": "microsoft/phi-4",
+   "tier": "free",
+   "signup": "https://docs.github.com/en/github-models"
+  },
+  "sambanova": {
+   "label": "SambaNova",
+   "base_url": "https://api.sambanova.ai/v1",
+   "env": "SAMBANOVA_API_KEY",
+   "default_model": "Meta-Llama-3.3-70B-Instruct",
+   "timeout": 60,
+   "tier": "freemium",
+   "signup": "https://cloud.sambanova.ai"
+  },
+  "huggingface": {
+   "label": "Hugging Face Router",
+   "base_url": "https://router.huggingface.co/v1",
+   "env": "HF_TOKEN",
+   "default_model": "openai/gpt-oss-20b:fastest",
+   "tier": "free",
+   "signup": "https://huggingface.co/settings/tokens"
+  },
+  "together": {
+   "label": "Together AI",
+   "base_url": "https://api.together.ai/v1",
+   "env": "TOGETHER_API_KEY",
+   "default_model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+   "tier": "cheap",
+   "signup": "https://api.together.ai/settings/api-keys"
+  },
+  "fireworks": {
+   "label": "Fireworks",
+   "base_url": "https://api.fireworks.ai/inference/v1",
+   "env": "FIREWORKS_API_KEY",
+   "default_model": "accounts/fireworks/models/llama-v3p3-70b-instruct",
+   "tier": "cheap",
+   "signup": "https://fireworks.ai/api-keys"
+  },
+  "novita": {
+   "label": "Novita",
+   "base_url": "https://api.novita.ai/openai/v1",
+   "env": "NOVITA_API_KEY",
+   "default_model": "deepseek/deepseek-v4.1-flash-1017",
+   "tier": "cheap",
+   "signup": "https://novita.ai/settings/key"
+  },
+  "nvidia": {
+   "label": "NVIDIA NIM",
+   "base_url": "https://integrate.api.nvidia.com/v1",
+   "env": "NVIDIA_API_KEY",
+   "default_model": "meta/llama-3.3-70b-instruct",
+   "tier": "freemium",
+   "signup": "https://build.nvidia.com/settings/api-keys"
+  },
+  "dashscope": {
+   "label": "Qwen (DashScope intl)",
+   "base_url": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+   "env": "DASHSCOPE_API_KEY",
+   "default_model": "qwen-flash",
+   "tier": "freemium",
+   "signup": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/settings/api-key"
+  },
+  "zai": {
+   "label": "GLM (Z.ai)",
+   "base_url": "https://api.z.ai/api/paas/v4",
+   "env": "ZAI_API_KEY",
+   "default_model": "glm-4.5-flash",
+   "tier": "freemium",
+   "signup": "https://z.ai/manage-apikey/apikey/list"
+  },
+  "zhipu": {
+   "label": "GLM (Zhipu BigModel)",
+   "base_url": "https://open.bigmodel.cn/api/paas/v4",
+   "env": "ZHIPU_API_KEY",
+   "default_model": "glm-4.5-flash",
+   "tier": "freemium",
+   "signup": "https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys"
+  },
+  "chutes": {
+   "label": "Chutes",
+   "base_url": "https://llm.chutes.ai/v1",
+   "env": "CHUTES_API_KEY",
+   "default_model": "Qwen/Qwen3.8-27B-TEE",
+   "tier": "cheap",
+   "signup": "https://chutes.ai/app/settings/api-keys"
+  },
+  "cloudflare": {
+   "label": "Cloudflare Workers AI",
+   "base_url": "https://api.cloudflare.com/client/v4/accounts/{CLOUDFLARE_ACCOUNT_ID}/ai/v1",
+   "env": "CLOUDFLARE_API_TOKEN",
+   "extra_env": [
+    "CLOUDFLARE_ACCOUNT_ID"
+   ],
+   "default_model": "@cf/meta/llama-3.1-8b-instruct",
+   "tier": "free",
+   "signup": "https://dash.cloudflare.com/profile/api-tokens"
+  },
+  "deepinfra": {
+   "label": "DeepInfra",
+   "base_url": "https://api.deepinfra.com/v1/openai",
+   "env": "DEEPINFRA_API_KEY",
+   "default_model": "google/gemma-4-31B-it",
+   "tier": "cheap",
+   "signup": "https://deepinfra.com/dash/api_keys"
+  },
+  "siliconflow": {
+   "label": "SiliconFlow",
+   "base_url": "https://api.siliconflow.cn/v1",
+   "env": "SILICONFLOW_API_KEY",
+   "default_model": "Qwen/Qwen3-8B",
+   "tier": "freemium",
+   "signup": "https://cloud.siliconflow.com/account/ak"
+  },
+  "hyperbolic": {
+   "label": "Hyperbolic",
+   "base_url": "https://api.hyperbolic.xyz/v1",
+   "env": "HYPERBOLIC_API_KEY",
+   "default_model": "meta-llama/Llama-3.3-70B-Instruct",
+   "tier": "cheap",
+   "signup": "https://app.hyperbolic.ai/settings/api-keys"
+  },
+  "nebius": {
+   "label": "Nebius Token Factory",
+   "base_url": "https://api.studio.nebius.com/v1",
+   "env": "NEBIUS_API_KEY",
+   "default_model": "meta-llama/Llama-3.3-70B-Instruct",
+   "tier": "cheap",
+   "signup": "https://tokenfactory.nebius.com/settings"
+  },
+  "mock": {
+   "label": "Mock (test)",
+   "mock": true,
+   "default_model": "echo",
+   "tier": "free"
+  }
+ },
+ "participants": [
+  {
+   "name": "Hugging Face GPT-OSS 20B",
+   "provider": "huggingface",
+   "model": "openai/gpt-oss-20b:fastest",
+   "enabled": true,
+   "role": "software"
+  },
+  {
+   "name": "Together Llama 3.3 70B",
+   "provider": "together",
+   "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+   "enabled": true,
+   "role": "philosopher"
+  },
+  {
+   "name": "Fireworks Llama 3.3 70B",
+   "provider": "fireworks",
+   "model": "accounts/fireworks/models/llama-v3p3-70b-instruct",
+   "enabled": true,
+   "role": "engineer"
+  },
+  {
+   "name": "Novita DeepSeek Flash",
+   "provider": "novita",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "enabled": true,
+   "role": "math"
+  },
+  {
+   "name": "NVIDIA Llama 3.3 70B",
+   "provider": "nvidia",
+   "model": "meta/llama-3.3-70b-instruct",
+   "enabled": true,
+   "role": "physicist"
+  },
+  {
+   "name": "Qwen Flash (DashScope)",
+   "provider": "dashscope",
+   "model": "qwen-flash",
+   "enabled": true,
+   "role": "humanities"
+  },
+  {
+   "name": "GLM Flash (Z.ai)",
+   "provider": "zai",
+   "model": "glm-4.5-flash",
+   "enabled": true,
+   "role": "lawyer"
+  },
+  {
+   "name": "GLM Flash (Zhipu)",
+   "provider": "zhipu",
+   "model": "glm-4.5-flash",
+   "enabled": true,
+   "role": "historian"
+  },
+  {
+   "name": "Chutes Qwen 3.8 27B",
+   "provider": "chutes",
+   "model": "Qwen/Qwen3.8-27B-TEE",
+   "enabled": true,
+   "role": "skeptic"
+  },
+  {
+   "name": "Cloudflare Llama 3.1 8B",
+   "provider": "cloudflare",
+   "model": "@cf/meta/llama-3.1-8b-instruct",
+   "enabled": true,
+   "role": "economist"
+  },
+  {
+   "name": "DeepInfra Gemma 4 31B",
+   "provider": "deepinfra",
+   "model": "google/gemma-4-31B-it",
+   "enabled": true,
+   "role": "psychologist"
+  },
+  {
+   "name": "SiliconFlow Qwen3 8B",
+   "provider": "siliconflow",
+   "model": "Qwen/Qwen3-8B",
+   "enabled": true,
+   "role": "medical"
+  },
+  {
+   "name": "Hyperbolic Llama 3.3 70B",
+   "provider": "hyperbolic",
+   "model": "meta-llama/Llama-3.3-70B-Instruct",
+   "enabled": true,
+   "role": "devil"
+  },
+  {
+   "name": "Nebius Llama 3.3 70B",
+   "provider": "nebius",
+   "model": "meta-llama/Llama-3.3-70B-Instruct",
+   "enabled": true,
+   "role": "engineer"
+  }
+ ]
+}
